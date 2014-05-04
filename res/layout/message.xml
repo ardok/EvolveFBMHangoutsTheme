@@ -1,106 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
-        android:paddingBottom="4dp"
-        android:paddingRight="8dp"
-        android:paddingLeft="8dp"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="4dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
 
     <TextView
-            android:id="@+id/date"
-            android:gravity="center"
-            android:textSize="12sp"
-            android:visibility="visible"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-condensed"
-            android:textColor="@color/dateColorReceived"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="4dp"/>
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:textColor="@color/dateColorReceived"
+        android:textSize="12sp"
+        android:visibility="visible" />
 
     <ImageView
-            android:id="@+id/myPicture"
-            android:layout_width="0dp"
-            android:layout_height="48dp"
-            android:scaleType="centerCrop"
-            android:maxWidth="48dp"
-            android:maxHeight="48dp"
-            android:minWidth="48dp"
-            android:minHeight="48dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignBottom="@+id/holder"/>
+        android:id="@+id/myPicture"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/holder"
+        android:layout_alignParentRight="true"
+        android:maxHeight="48dp"
+        android:maxWidth="48dp"
+        android:minHeight="48dp"
+        android:minWidth="48dp"
+        android:scaleType="centerCrop" />
 
     <LinearLayout
-            android:orientation="horizontal"
-            android:id="@+id/holder"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/date">
+        android:id="@+id/holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:orientation="horizontal">
 
         <ImageView
-                android:id="@+id/contactPicture"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginRight="1dp"
-                android:scaleType="centerCrop"
-                android:maxWidth="48dp"
-                android:maxHeight="48dp"
-                android:minWidth="48dp"
-                android:minHeight="48dp" />
+            android:id="@+id/contactPicture"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="1dp"
+            android:maxHeight="48dp"
+            android:maxWidth="48dp"
+            android:minHeight="48dp"
+            android:minWidth="48dp"
+            android:scaleType="centerCrop" />
 
         <LinearLayout
-                android:orientation="vertical"
-                android:id="@+id/background"
+            android:id="@+id/background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-11dp"
+            android:layout_marginTop="-5dp"
+            android:minHeight="54dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="-3dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="left"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/dateColorReceived"
+                android:textSize="12sp" />
 
-                <TextView
-                        android:textSize="12sp"
-                        android:textColor="@color/dateColorReceived"
-                        android:gravity="left"
-                        android:layout_gravity="left"
-                        android:id="@+id/name"
-                        android:paddingLeft="5dp"
-                        android:paddingBottom="3dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="-3dp"
-                        android:fontFamily="sans-serif-condensed" />
-
-                <TextView
-                        android:textSize="14sp"
-                        android:textColor="@color/textColorReceived"
-                        android:id="@+id/body"
-                        android:gravity="center_vertical"
-                        android:layout_gravity="center_vertical"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif-condensed"
-                        android:layout_marginLeft="2dp"
-                        android:paddingRight="5dp"
-                        android:paddingLeft="5dp"/>
+            <TextView
+                android:id="@+id/body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_vertical"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/textColorReceived"
+                android:textSize="14sp" />
 
             <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:maxHeight="400dp"
-                    android:minWidth="150dp"
-                    android:id="@+id/media"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:visibility="gone"
-                    android:scaleType="centerInside"/>
+                android:id="@+id/media"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:maxHeight="400dp"
+                android:minWidth="150dp"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:visibility="gone" />
 
-                <View
-                        android:id="@+id/gifView"
-                        android:padding="10dp"
-                        android:visibility="gone"
-                        android:layout_width="200dp"
-                        android:layout_height="wrap_content" />
+            <View
+                android:id="@+id/gifView"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone" />
 
         </LinearLayout>
     </LinearLayout>
