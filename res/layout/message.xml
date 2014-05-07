@@ -26,10 +26,6 @@
         android:layout_height="48dp"
         android:layout_alignBottom="@+id/holder"
         android:layout_alignParentRight="true"
-        android:maxHeight="48dp"
-        android:maxWidth="48dp"
-        android:minHeight="48dp"
-        android:minWidth="48dp"
         android:scaleType="centerCrop" />
 
     <LinearLayout
@@ -43,20 +39,15 @@
             android:id="@+id/contactPicture"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:layout_marginRight="1dp"
-            android:maxHeight="48dp"
-            android:maxWidth="48dp"
-            android:minHeight="48dp"
-            android:minWidth="48dp"
-            android:scaleType="centerCrop" />
+            android:scaleType="centerCrop"
+            android:layout_marginRight="-11dp" />
 
         <LinearLayout
             android:id="@+id/background"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="-11dp"
-            android:layout_marginTop="-5dp"
-            android:minHeight="54dp"
+            android:layout_marginTop="-1dp"
+            android:minHeight="52dp"
             android:layout_gravity="center_vertical"
             android:gravity="center_vertical"
             android:orientation="vertical">
@@ -69,22 +60,9 @@
                 android:layout_marginTop="-3dp"
                 android:fontFamily="sans-serif-condensed"
                 android:gravity="left"
-                android:paddingBottom="3dp"
-                android:paddingLeft="5dp"
+                android:paddingLeft="3dp"
                 android:textColor="@color/dateColorReceived"
                 android:textSize="12sp" />
-
-            <TextView
-                android:id="@+id/body"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:fontFamily="sans-serif-condensed"
-                android:gravity="center_vertical"
-                android:paddingRight="5dp"
-                android:paddingLeft="5dp"
-                android:textColor="@color/textColorReceived"
-                android:textSize="14sp" />
 
             <ImageView
                 android:id="@+id/media"
@@ -104,6 +82,15 @@
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:padding="8dp"
+                android:textColor="@color/textColorReceived"
+                android:textSize="14sp" />
 
         </LinearLayout>
     </LinearLayout>

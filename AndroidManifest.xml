@@ -53,7 +53,7 @@
 
         <!-- can be light, dark, or default, which defines the icon to show in the actionbar inside the app -->
         <meta-data android:name="evolve_actionbar_icon"
-                   android:value="dark" />
+                   android:value="light" />
 
         <!-- says whether or not this theme has a night mode to be applied when user has night mode enabled -->
         <meta-data android:name="evolve_has_night_mode"
