@@ -22,7 +22,6 @@ limitations under the License.
 
     <!-- Main theme color for various parts on the screen, more of these things will be added in the future -->
     <color name="theme_color">#289dfc</color>
-    <!--<color name="theme_color">#393939</color>-->
 
     <!-- the text color drawn on the message for the body -->
     <color name="textColorSent">#f4f4f4</color>
@@ -37,14 +36,10 @@ limitations under the License.
     <color name="night_dateColorReceived">#989898</color>
 
     <!-- the link color for any links in a message text -->
-    <!--<color name="link_color">#93c</color>-->
-    <!--<color name="night_link_color">#93c</color>    -->
     <color name="link_color">#262626</color>
     <color name="night_link_color">#262626</color>
 
     <!-- the message entry color is for any message entry areas in the main window and the new message window -->
-    <!--<color name="messageEntryColor">#020202</color>-->
-    <!--<color name="night_messageEntryColor">#f4f4f4</color>    -->
     <color name="messageEntryColor">#ffffff</color>
     <color name="night_messageEntryColor">#ffffff</color>
 
