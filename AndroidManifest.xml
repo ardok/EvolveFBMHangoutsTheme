@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.kusuma.android.evolve_fbm_hangouts"
-          android:versionCode="2"
-          android:versionName="1.0.1">
+          android:versionCode="3"
+          android:versionName="1.0.2">
 
     <uses-sdk android:minSdkVersion="14"
               android:targetSdkVersion="19"/>
@@ -29,7 +29,7 @@
         <!-- Can be true or false, true means that contact pictures will be round -->
         <!-- false means that contact pictures will be square-->
         <meta-data android:name="evolve_theme_round_contact_pictures"
-                   android:value="false" />
+                   android:value="true" />
 
         <!-- Can be true or false, true means that contact pictures will be shown for each and every message -->
         <!-- false means that if the message above a received message is also received, then the 2nd received messages contact picture will not be shown -->
